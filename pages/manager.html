@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link href="simple-datatables/style.css" rel="stylesheet">
+    <link href="/pages/simple-datatables/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="/pages/simple-datatables/simple-datatables.js"></script>
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".datatable").DataTable();
+        });
+    </script>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background: #f6f9ff;
+        }
+
+        a {
+            color: #4154f1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #717ff5;
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Nunito", sans-serif;
+        }
+
+        nav {
+            background-color: floralwhite;
+        }
+
+        .pagetitle {
+            margin-bottom: 10px;
+        }
+
+        .pagetitle h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            font-weight: 600;
+            color: #012970;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="?menu=home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="?menu=manager">Manager</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?menu=kaprodi">Kepala Program Studi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?menu=mahasiswa">Mahasiswa</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <ol class="breadcrumb" style="background-color: #f6f9ff;">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item">Manager</li>
+        </ol>
+    </div>
+
+    <div class="container card mt-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Manager</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table datatable">
+                    <thead>
+                        <th>NRP</th>
+                        <th>Nama</th>
+                        <th>Program Studi</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>720001</td>
+                            <td>Anita Anggraeni, S.S.</td>
+                            <td>Teknik Informatika</td>
+                            <td>mo.it@it.maranatha.edu</td>
+                        </tr>
+                        <tr>
+                            <td>710001</td>
+                            <td>Adriani Dewi Hutami, S.E., M.M.</td>
+                            <td>Sistem Informasi</td>
+                            <td>mo.si@it.maranatha.edu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
